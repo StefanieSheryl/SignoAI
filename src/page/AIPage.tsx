@@ -17,7 +17,7 @@ export default function AIPage() {
     
     const loadTrainedModel = async () => {
         try {
-            modelRef.current = await tf.loadLayersModel("https://signo-ai.vercel.app/model.json");
+            modelRef.current = await tf.loadLayersModel("https://signo-ai-web.vercel.app/model.json");
         } catch (error) {
             console.error("Error loading the model:", error);
         }
